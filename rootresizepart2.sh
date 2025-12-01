@@ -20,7 +20,7 @@ rsync -avxHAX --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*",
 for i in /proc/ /sys/ /dev/ /run/ /boot/; do 
   mount --bind $i $mountpath/$i
  done
- ##Change root directory to new and update GRUB and initrd inside chroot
+ ##Change root directory to new and update GRUB and initrd inside chroot, create lvm mirror, volume and filesystem for /var, move files to new volume 
 chroot "$mountpath" bash -c '
 grub-mkconfig -o /boot/grub/grub.cfg
 update-initramfs -u
@@ -38,8 +38,10 @@ cp -aR /var/* /mnt/var
 umount /mnt/var
 mount /dev/vg_var/lv_var /var
 '
+###Add record to fstab for new /var volume
 varuuid=$(blkid /dev/vg_var/lv_var | awk '{print $2}')
 echo "$varuuid /var ext4 defaults 0 0" >> $mountpath/etc/fstab
+###Create /home volume in the same volume group as / directory, move files and make new record in fstab
 echo "Available free space on volume group $(vgs $vgname --noheadings -o vg_free)"
 read -p "Enter /home logical volume size (in megabytes or gigabytes, for example, 2000M or 10G): " homesize
 lvcreate -n lv_home -L $homesize /dev/$vgname
@@ -51,3 +53,4 @@ umount /mnt/home
 mount /dev/$vgname/lv_home /home
 homeuuid=$(blkid /dev/$vgname/lv_home | awk '{print $2}')
 echo "$homeuuid /home ext4 defaults 0 0" >> $mountpath/etc/fstab
+
