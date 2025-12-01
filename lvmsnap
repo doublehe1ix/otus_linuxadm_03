@@ -1,0 +1,53 @@
+Script started on 2025-12-01 09:27:33+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="118" LINES="29"]
+[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# exit[2Plsrebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpasswdlsof /home[6Pcd /lsof /home[2@umount[C[C[C[C[C[Crm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creboot[K[4Plsvsconvert --merge /dev/vg0/home_snap_01[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pumount -l /home[3P/homerm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pscript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch /home/lcadmin/testfile{1..25}
+[?2004l[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# touch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrebootumount -l /home[9Prebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpasswdlsof /home[6Pcd /lsof /home[2@umount[C[C[C[C[C[Crm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home
+[?2004l  Logical volume "home_snap_01" created.
+[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# lvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ktouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpasswdlsof /home[6Pcd /lsof /home[2@umount[C[C[C[C[C[Crm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Prm -f /home/lcadmin/testfile{5..15}
+[?2004l[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# rm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pumount -l /home[C[1P /home[1P /home[1P/home
+[?2004l[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# umount /homerm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpasswdlsof /home[6Pcd /lsof /home[2@umount[C[C[C[C[C[Crm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Prm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pumount /home[2Plsof[C[C[C[C[C[C[6Pcd /lsof /home[4Ppasswd[2Pexitscript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pumount -l /home[9Preboot[4Plsexittouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Prm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pumount /home[Kumount /homerm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsrebootumount -l /homescript /tmp/typescript[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpasswdlsof /home[6Pcd /lsof /home[2@umount[C[C[C[C[C[Crm -f /home/lcadmin/testfile{5..15}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clvcreate -L 500M -s -n home_snap_01 /dev/vg0/lv_home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptouch /home/lcadmin/testfile{1..25}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creboot[K[4Plsvsconvert --merge /dev/vg0/home_snap_01[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pumount -l /homelvconvert --merge /dev/vg0/home_snap_01
+[?2004l  Merging of volume vg0/home_snap_01 started.
+  vg0/lv_home: Merged: 100.00%
+[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# mount -a
+[?2004l[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# ls -al /home/lcadmin/
+[?2004ltotal 40
+drwxr-x--- 4 lcadmin lcadmin 4096 Dec  1 08:29 [0m[01;34m.[0m
+drwxr-xr-x 4 root    root    4096 Nov 28 13:00 [01;34m..[0m
+-rw-r--r-- 1 root    root    1315 Nov 28 12:41 1.sh
+-rw-r--r-- 1 root    root    2269 Nov 28 12:59 2.sh
+-rw------- 1 lcadmin lcadmin  125 Dec  1 06:47 .bash_history
+-rw-r--r-- 1 lcadmin lcadmin  220 Mar 31  2024 .bash_logout
+-rw-r--r-- 1 lcadmin lcadmin 3771 Mar 31  2024 .bashrc
+drwx------ 2 lcadmin lcadmin 4096 Nov 27 07:36 [01;34m.cache[0m
+-rw-r--r-- 1 lcadmin lcadmin  807 Mar 31  2024 .profile
+drwx------ 2 lcadmin lcadmin 4096 Nov 27 07:30 [01;34m.ssh[0m
+-rw-r--r-- 1 lcadmin lcadmin    0 Nov 27 07:37 .sudo_as_admin_successful
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile1
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile10
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile11
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile12
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile13
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile14
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile15
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile16
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile17
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile18
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile19
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile2
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile20
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile21
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile22
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile23
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile24
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile25
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile3
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile4
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile5
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile6
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile7
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile8
+-rw-r--r-- 1 root    root       0 Dec  1 09:27 testfile9
+-rw-rw-r-- 1 lcadmin lcadmin    0 Dec  1 07:32 typescript
+[?2004h]0;root@lvmtest01: ~root@lvmtest01:~# exit
+[?2004lexit
+
+Script done on 2025-12-01 09:29:23+00:00 [COMMAND_EXIT_CODE="0"]
